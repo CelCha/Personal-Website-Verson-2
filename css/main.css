@@ -14,6 +14,9 @@ h1, h2, h3 {
 li {
 	cursor: pointer;
 }
+.profile-sections li {
+	cursor: auto;
+}
 
 /*Navigation bar*/
 hr {
@@ -24,6 +27,7 @@ hr {
 	padding-top: 15px;
 	padding-right: 20px;
 	border-bottom: 1px solid #dbdbdb;
+	background-color: #fff;
 }
 
 #navbar .pull-left {
@@ -72,16 +76,29 @@ hr {
 .profile {
 	padding: 30px;
 }
+.profile .col-md-8 h1{
+	font-size: 60px;
+	text-align: left;
+}
 
 .profile p{
+	padding-left: 10px;
 	padding-bottom: 20px;
+	text-align: left;
+	font-size: 16px;
+}
+#profile-icons {
+	float: left;
+	opacity: 0.7;
+}
+.resume-button {
+	float: left;
 }
 
 .resume-button a{
-	border-radius: 10px;
 	border: 1px solid #2C95DA;
 	padding: 5px;
-	font-size: 16px;
+	font-size: 18px;
 	margin: 10px;
 	width: 125px;
 	text-decoration: none;
@@ -90,7 +107,60 @@ hr {
 	background-color: #2C95DA;
 	color: white;
 }
- 
+
+#profile-menu {
+	padding: 10px;
+	margin: 10px;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+#profile-menu li {
+	font-size: 18px;
+}
+/*
+.profile #progresstitle {
+    float: left;
+    margin-right: 1em;
+}
+*/
+.profile-sections .row {
+	margin: 10px;
+}
+.profile-sections h3 {
+	float: left;
+	padding-top: 0px;
+	margin-top: 0px;
+	padding-left: 15px;
+}
+.progress {
+	margin-top: 10px;
+	margin-bottom: 10px;	
+}
+td {
+	text-align: left;
+	padding-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/* Experience */
+#experience h4 {
+	padding: 5px 0px 5px 0px;
+	margin: 0px;
+}
+.work-experience, .work-experience li p{
+	padding: 5px 0px 5px 0px;
+	margin: 0px;	
+}
+.dates {
+	vertical-align: top;
+	padding-top: 5px;
+}
+.work-experience li p {
+	color: #5a5a5a;
+	font-size: 14px;
+}
+
  #circletwo {
 	border-radius: 50% 50% 50% 50%;
 	width: 250px;
@@ -195,15 +265,17 @@ hr {
 }
 
 /*Full gallery*/
-.gallery-tabs {
+#gallery-tabs {
 	padding: 0px;
 	margin: 0px;
-}
-.gallery-tabs li{
 	display: inline-block;
-	font-size: 24px;
-	padding: 5px 10px 5px 10px;
+	float: none;
+	vertical-align: top;
 
+}
+#gallery-tabs li{	
+	font-size: 20px;
+	display: inline;
 }
 
 .gallery p{

@@ -30,22 +30,26 @@ hr {
 	background-color: #fff;
 }
 
+
 #navbar .pull-left {
 	padding: 0px;
 	margin: 0px;
 }
-
+.button-hover {
+	padding: 10px;
+}
 .button-hover:hover {
 	background-color: #2C95DA;
 	border-radius: 3px;
 	color: white;
 	text-decoration: none;
+	padding: 10px;
 }
 
 
 #navbar li{
 	display: inline;
-	padding: 10px;
+	padding: 0px;
 	font-weight: bold;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -132,6 +136,8 @@ hr {
 	padding-top: 0px;
 	margin-top: 0px;
 	padding-left: 15px;
+	text-align: left;
+	font-size: 22px;
 }
 .progress {
 	margin-top: 10px;
@@ -140,10 +146,18 @@ hr {
 td {
 	text-align: left;
 	padding-right: 10px;
+	padding-bottom: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-/* Experience */
+#technical-skills td, #technical-skills p {
+	padding-bottom: 0px;
+	margin: 0px;
+}
+.position-title .position {
+	font-weight: 600;
+}
+/* -----Experience */
 #experience h4 {
 	padding: 5px 0px 5px 0px;
 	margin: 0px;
@@ -152,9 +166,17 @@ td {
 	padding: 5px 0px 5px 0px;
 	margin: 0px;	
 }
+.location {
+	color: #9C9C9C;
+	font-size: 16px;
+}
 .dates {
 	vertical-align: top;
 	padding-top: 5px;
+	color: #9C9C9C;
+}
+.dates h4 {
+	font-size: 16px;
 }
 .work-experience li p {
 	color: #5a5a5a;
@@ -182,19 +204,62 @@ td {
 	font-size: 70px;
 }
 
-.project-button {
-	color: #fff;
-	border-radius: 5px;
-	border: 1px solid #fff;
-	background-color: #2C95DA;
-	display: inline-block;
-	padding: 10px;
+.project-gallery .pic {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	white-space: nowrap;
+	border-radius: 50% 50% 50% 50%;	
+	margin: 30px;
+	background-color: #fff;
 }
 
-.project-button:hover {
-	color: #2C95DA;
-	border-color: #2C95DA;
-	background-color: #fff;
+#project1 img{
+	height: 300px;
+	margin-left: -150px;
+}
+.pic {
+	position: relative;
+}
+
+.pic:hover .title-overlay {
+	visibility: visible;
+	opacity: 1;
+	cursor: pointer;
+}
+.title-overlay {
+	height: 300px;
+	width: 300px;
+	border-radius: 50% 50% 50% 50%;		
+	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+ 	right: 0;
+ 	background: rgba(29, 106, 154, 0.72);
+  	color: #fff;
+  	visibility: hidden;
+  	opacity: 0;
+  	display: table;
+}
+.title-overlay p{
+	 vertical-align: middle;
+  	text-align: center;
+  	display: table-cell;
+  	color: #fff;
+  	font-size: 18px;
+}
+
+
+#project2 img {
+	height: 300px;
+}
+#project3 img{
+	height: 400px;
+}
+.description {
+	background: #fff;
+	padding: 20px;
 }
 
 /* Gallery */
@@ -207,6 +272,7 @@ td {
 }
 .gallery p {
 	font-size: 20px;
+	text-align: center;
 }
 
 #artheader {

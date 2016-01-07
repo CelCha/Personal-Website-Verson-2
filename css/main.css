@@ -448,7 +448,7 @@ ul {
 
 /*footer */
 #attribution {
-	color: #959595;
+	color: #5B89C9;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 }
@@ -459,7 +459,7 @@ ul {
 
 .footer {
 	text-align: center;
-	background-color: #5A5A5A;
+	background-color: #113C78;
 	border-top: 1px solid #dbdbdb;
 	border-bottom: 1px solid #dbdbdb;
 	padding-top: 20px;
@@ -478,5 +478,5 @@ ul {
 }
 #footer-line {
 	margin-bottom: 5px;
-	border-color: #464646;
+	border-color: #1D54A1;
 }

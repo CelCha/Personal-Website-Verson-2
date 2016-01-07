@@ -8,8 +8,11 @@ body, h1, h2, h3, p, a {
 h1, h2, h3 {
 	font-weight: 600;
 }
+h1 {
+	font-size: 70px;
+}
 .container {
-	padding-top: 20px;
+	padding: 10px;
 }
 li {
 	cursor: pointer;
@@ -63,13 +66,13 @@ hr {
 	background-image:url('http://i.imgur.com/ussiIzY.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 600px;
+	height: 1000px;
 	margin: 0px;
 }
 
 .jumbotron .container{
 	position: relative;
-	top: 175px;
+	top: 200px;
 }
 
 .jumbotron h1, .jumbotron p {
@@ -84,10 +87,20 @@ hr {
 .profile p{
 	font-size: 16px;
 }
+
 #profile-icons {
-	opacity: 0.7;
-	margin: 5px;
 	padding: 5px;
+
+}
+#profile-icons li {
+	padding: 0px 5px 0px 5px;
+}
+#profile-icons li:hover {
+	opacity: 0.7;
+}
+#profile-icons img {
+	height: 40px;
+	width: 40px;
 }
 .profile .row {
 	margin: 5px;
@@ -95,8 +108,10 @@ hr {
 #project-p p{
 	text-align: left;
 }
+
 .resume-button a{
 	border: 1px solid #2C95DA;
+	border-radius: 5px;
 	padding: 5px;
 	font-size: 18px;
 	margin: 10px;
@@ -108,10 +123,10 @@ hr {
 	color: white;
 }
 #summary p{
-	padding: 0px 100px 0px 100px;
-	text-align: left;
+	text-align: center;
+	padding: 0px 80px 10px 80px;
+	margin: 5px;
 }
-
 #profile-menu {
 	padding: 10px;
 	margin: 10px;
@@ -123,12 +138,7 @@ hr {
 #profile-tabs {
 	float: none;
 }
-/*
-.profile #progresstitle {
-    float: left;
-    margin-right: 1em;
-}
-*/
+
 .profile-sections .row {
 	margin: 10px;
 }
@@ -184,11 +194,12 @@ td {
 	font-size: 14px;
 }
 
- #circletwo {
+#circletwo {
 	border-radius: 50% 50% 50% 50%;
 	width: 250px;
 	height: 250px;
 	border: 5px solid #fff;
+	margin: 10px;
 }
 
 .icon li {
@@ -196,13 +207,16 @@ td {
 }
 /* Projects */
 .projects {
-	background: #2C95DA;
+	background: #236CBA;
 	padding: 30px;
+	background-image:url('http://i.imgur.com/ussiIzY.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0px -300px;
 }
 
 .projects h1{
 	color: #fff;
-	font-size: 70px;
 }
 
 .project-gallery .pic {
@@ -400,6 +414,9 @@ ul {
 	background-color: transparent;	
 	padding: 0px;
 }
+#linkbox li:hover {
+	opacity: 0.7;
+}
 #linkbox ul {
 	padding: 0px;
 }
@@ -414,13 +431,13 @@ ul {
 
 }
 #linkbox h2 {
-	color: #5a5a5a;
+	color: #fff;
 	font-size: 36px;
 	font-weight: 600;
 	padding-top: 0px;
 }
 #linkbox h4 {
-	color: #5a5a5a;
+	color: #fff;
 }
 
 #linkbox img {
@@ -432,7 +449,7 @@ ul {
 
 /*footer */
 #attribution {
-	color: #848484;
+	color: #959595;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 }
@@ -443,7 +460,7 @@ ul {
 
 .footer {
 	text-align: center;
-	background-color: #f7f7f7;
+	background-color: #5A5A5A;
 	border-top: 1px solid #dbdbdb;
 	border-bottom: 1px solid #dbdbdb;
 	padding-top: 20px;
@@ -459,4 +476,8 @@ ul {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 
+}
+#footer-line {
+	margin-bottom: 5px;
+	border-color: #464646;
 }

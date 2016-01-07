@@ -27,10 +27,9 @@ hr {
 }
 
 #navbar {
-	padding-top: 15px;
-	padding-right: 20px;
-	border-bottom: 1px solid #dbdbdb;
-	background-color: #fff;
+	padding: 20px 20px 10px 20px;
+	background-color: transparent;
+	border: none;
 }
 
 
@@ -40,13 +39,12 @@ hr {
 }
 .button-hover {
 	padding: 10px;
+	color: #fff;
 }
 .button-hover:hover {
-	background-color: #2C95DA;
-	border-radius: 3px;
-	color: white;
+	border-bottom: 3px solid #2C95DA;
 	text-decoration: none;
-	padding: 10px;
+	opacity: 0.9;
 }
 
 
@@ -54,7 +52,7 @@ hr {
 	display: inline;
 	padding: 0px;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 18px;
 	text-transform: uppercase;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -81,7 +79,7 @@ hr {
 
 /* Profile */
 .profile {
-	padding: 30px;
+	padding: 40px;
 }
 
 .profile p{
@@ -216,6 +214,7 @@ td {
 
 .projects h1{
 	color: #fff;
+	padding: 40px;
 }
 
 .project-gallery .pic {
@@ -287,7 +286,7 @@ td {
 /* Gallery */
 
 .gallery {
-	padding: 30px;
+	padding: 40px;
 }
 .gallery h1 {
 	font-size: 70px;

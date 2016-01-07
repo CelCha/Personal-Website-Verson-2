@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	
 	//nav bar
+	$("#navbar").css("background-color", "transparent");
 
 	$("#home").click(function(){
 		$('html, body').animate({
@@ -31,7 +32,8 @@ $(document).ready(function(){
 			scrollTop: $(".email").offset().top
 		}, 1300);
 	});
-		
+
+
 });
 
 

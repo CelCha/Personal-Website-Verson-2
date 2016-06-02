@@ -78,6 +78,7 @@ hr {
 }
 
 /* Profile */
+
 .profile {
 	padding: 40px;
 }
@@ -204,17 +205,13 @@ td {
 }
 /* Projects */
 .projects {
-	background: #236CBA;
+	background: #fff;
 	padding: 30px;
-	background-image:url('http://i.imgur.com/ussiIzY.png');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: 0px -300px;
 }
 
 .projects h1{
-	color: #fff;
-	padding: 40px;
+	color: #2C95DA;
+	padding: 20px;
 }
 
 .project-gallery .pic {
@@ -268,6 +265,8 @@ td {
 .description {
 	background: #fff;
 	padding: 20px;
+	border-radius: 5px;
+	border: 1px solid #C4C4C4;
 }
 #project-description p{
 	color: #5a5a5a;
@@ -290,6 +289,7 @@ td {
 }
 .gallery h1 {
 	font-size: 70px;
+	padding: 60px;
 }
 .gallery p {
 	font-size: 20px;
@@ -393,8 +393,9 @@ td {
 	padding: 10px;
 }
 
-#motion-vids .description {
+#motion-vids .description-motion {
 	padding: 15px;
+	background: #fff;
 }
 /*Contact me */
 
@@ -429,13 +430,13 @@ ul {
 
 }
 #linkbox h2 {
-	color: #fff;
+	color: #4D4D4D;
 	font-size: 36px;
 	font-weight: 600;
 	padding-top: 0px;
 }
 #linkbox h4 {
-	color: #fff;
+	color: #4D4D4D;
 }
 
 #linkbox img {
@@ -447,18 +448,18 @@ ul {
 
 /*footer */
 #attribution {
-	color: #5B89C9;
+	color: #4D4D4D;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 }
 #attribution a {
 	font-size: 12px;
-	color: #2C95DA;
+	color: #33E0FF;
 }
 
 .footer {
 	text-align: center;
-	background-color: #113C78;
+	background-color: #fff;
 	border-top: 1px solid #dbdbdb;
 	border-bottom: 1px solid #dbdbdb;
 	padding-top: 20px;
@@ -475,7 +476,4 @@ ul {
 	font-size: 12px;
 
 }
-#footer-line {
-	margin-bottom: 5px;
-	border-color: #1D54A1;
-}
+

@@ -1,961 +1,442 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Celina Chang</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    	<link rel="stylesheet" type="text/css" href="css/main.css"/>
-    	<link rel="stylesheet" href="css/lightbox.min.css" >
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
-		<link rel="shortcut icon" href="C7.ico">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js"></script>
-		<script type="text/javascript" src="js/app-index.js"></script>
-		<script type="text/javascript" src="js/app-profile.js"></script>
-		<script type="text/javascript" src="js/app-gallery.js"></script>
-		<script type="text/javascript" src="js/app-projects.js"></script>
-		<script type="text/javascript" src="js/app-scroll.js"></script>
+<!DOCTYPE HTML>
+<html lang="en" class="no-js">
+	<head>
+			<title>Celina Chang</title>
+			<meta charset="UTF-8">
+			<meta name="description" content="" />
+			<meta name="keywords" content="" />
+			<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 
-    </head>
-    <body>
-    	
-    	<div class="navbar navbar-default navbar-fixed-top" id="navbar">
-    		
-    			<ul class="pull-right">
-    				<li id="home"><a class="button-hover" href="#home">Home</a></li>
-					<li id="profile"><a class="button-hover" href="#profile">Profile</a></li>
-					<li id="projects"><a class="button-hover" href="#projects">Projects</a></li>
-					<li id="gallery"><a class="button-hover" href="#gallery">Gallery</a></li>
-    			</ul>
-    		
-    	</div>
-    	<div id="top-nav">
-	    	<div class="jumbotron" id="header">
-				<div class="container" align="center">
-					<div class="col-md-12">
-							<img src="http://i.imgur.com/0JE1Iao.jpg" id="circletwo">	
-					</div>
-					<h1>Celina Chang</h1>   
-					<p>University of Waterloo | Computer Engineering | Co-op</p>
-					<ul class="icon" id="profile-icons">
-								<li class="icon-hover"><a href="https://github.com/CelCha"><img src="images/GitHub-white.png"></a></li>
-								<li class="icon-hover"><a href="http://ca.linkedin.com/in/celinachang"><img src="images/linked-in@2x.png"></a></li>
-							</ul> 
-					<!----<ul class="icon">
-						<li class="icon-hover"><a href="https://github.com/CelCha"><img src="images/github.png"></a></li>
-						<li class="icon-hover"><a href="http://ca.linkedin.com/in/celinachang"><img src="images/linked-in.png"></a></li>
-					</ul> 	-->	
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+			<link rel="stylesheet" href="css/lightbox.min.css" >
+			<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+			<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script><!-- Modernizr -->
+			<script type="text/javascript" src="js/nav.js"></script>
+			<script type="text/javascript" src="js/portfolio.js"></script>
+	</head>
+	<body>
+<!-- Header -->
+		
+		<div class="header">
+			<div class="jumbotron">
+				<div class="container">
+					<center>
+					<h1>CELINA CHANG</h1>
+					<p>Computer Engineering Student &#8226;  University of Waterloo &#8226; Co-op</p>
+					</center>
 				</div>
-	    	</div>
-    	</div>
-    	<div id="bottom-nav">
-	        <div class="profile">
-	        	<div class="container">
-					<div class="row" align="center">
-
-						<h1>Profile</h1>
-						<p>2A Computer Engineering | University of Waterloo | c57chang@uwaterloo.ca</p>
-							
-						</div>
-						<div class="resume-button">
-							<a href="https://drive.google.com/open?id=0BwwDTBfVzlxTTFh6My1uS1NSN1U">View Resume</a>
-						</div>	
-				</div>		     			        		
-	   					<div class="row" id="profile-menu">
-	   						<div class="container">
-							<ul class="nav nav-tabs" id="profile-tabs">
-								<li role="presentation" id="profile-summary">
-			   						<a role="button" class="dropdown-toggle">Hello!</a>
-								</li>
-			 					<li role="presentation" id="profile-skills">
-			   						<a class="dropdown-toggle">Technical Skills</a>
-								</li>
-								<li role="presentation" id="profile-experience">
-			   						<a class="dropdown-toggle">Experience</a>
-			   					</li>
-			   					<li role="presentation" id="profile-projects">
-			   						<a class="dropdown-toggle">Projects</a>
-			   					</li>
-								<li role="presentation" id="profile-education">
-			   						<a class="dropdown-toggle">Education</a>
-								</li>
-								<li role="presentation" id="profile-language">
-									<a class="dropdown-toggle">Languages</a>
-								</li>
-								<li role="presentation" id="profile-activities">
-									<a class="dropdown-toggle">Activities and Interests</a>
-								</li>
-								<li role="presentation" id="profile-all">
-									<a class="dropdown-toggle">All</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-			</div>
-	<!--------------------Technical Skills---------------------->		
-	<div class="container" id="project-p">	
-	        		<div id="summary">
-		        			<h3>Hello!</h3>
-		        			<p>I am a second year Computer Engineering student at the University of Waterloo. My passion is in traditional, digital, motion arts.</p>
-		        			<p>Currently, I am UI/UX Designer at WeMesh Inc. I will be looking for a co-op position for Winter 2017 (January-April). Feel free to contact me at c57chang@uwaterloo.ca if you feel my skillset is suitable for a position.</p>
-
-		        			<hr>
-	        		</div>
-	        		<div id="all">
-	        		<div class="profile-sections" id="technical-skills">
-		        		<div class="row">
-		        			<div class="col-md-3">
-		        				<h3>Programming</h3>
-		        			</div>
-		        			<div class="col-md-9">
-		        				<table border="0" style="width:100%">
-								  <tr>
-								    <td width="20%"><h4 id="progresstitle">HTML/CSS</h4></td>
-								    <td>
-								    	<div class="progress">
-											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-												Proficient
-											</div>
-										</div>
-									</td>		
-								  </tr>
-								  <tr>
-								    <td width="20%"><h4 id="progresstitle">C#</h4></td>
-								    <td>
-										<div class="progress">
-											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
-												Proficient
-											</div>
-										</div>
-									</td>		
-								  </tr>
-								   <tr>
-								    <td width="20%"><h4 id="progresstitle">C++</h4></td>
-								    <td>
-								    	<div class="progress">
-											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-												Beginner
-											</div>
-										</div>
-									</td>		
-								  </tr>
-
-								  <tr>
-								    <td width="20%"><h4 id="progresstitle">JavaScript/JQuery</h4></td>
-								    <td>
-										<div class="progress">
-											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-												Beginner
-											</div>
-										</div>
-									</td>		
-								  </tr>
-								  <tr>
-								  	<td width="20%"><h4 id="progresstitle">Java</h4></td>
-								  	<td>
-								  		<div class="progress">
-											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-												Beginner
-											</div>
-										</div>
-								  	</td>
-								  </tr>
-								   <tr class="hide">
-								  	<td width="20%"><h4 id="progresstitle">Git</h4></td>
-								  	<td>
-								  		<div class="progress">
-											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
-												Beginner
-											</div>
-										</div>	
-								  	</td>
-								  </tr>
-								  <tr class="hide">
-								  	<td width="20%"><h4 id="progresstitle">VHDL</h4></td>
-								  	<td>
-								  		<div class="progress">
-											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 15%">
-												Beginner
-											</div>
-										</div>	
-								  	</td>
-								  </tr>
-								</table>			
-		        			</div>	        				
-		        		</div>
-		        		<hr>
-	        			<div class="row">
-		        			<div class="col-md-3">
-		        				<h3>Tools</h3>
-		        			</div>
-		        			<div class="col-md-9">
-		        				<table border="0" style="width:100%">
-								  <tr>
-								    <td width="20%"><h4 id="progresstitle">IDE/Text Editors</h4></td>
-								    <td><p>Eclipse, Android Studio, Sublime Text</p></td>		
-								  </tr>
-								  <tr>
-								    <td width="20%"><h4 id="progresstitle">Issue and Project Tracking </h4></td>
-								    <td><p>JIRA, Pivotal</p></td>		
-								  </tr>
-								  <tr>
-								    <td width="20%"><h4 id="progresstitle">Microsoft</h4></td>
-								    <td><p>Word, Excel</p></td>		
-								  </tr>
-								  <tr>
-								  	<td width="20%"><h4 id="progresstitle">Adobe</h4></td>
-								  	<td><p>Photoshop, Illustrator, InDesign</p></td>
-								  </tr>
-								  <tr>
-								  	<td width="20%"><h4 id="progresstitle">Wireframing</h4></td>
-								  	<td><p>Axure RP 8</p></td>
-								  </tr>
-								  <tr>
-								  	<td width="20%"><h4 id="progresstitle">3D Modelling</h4></td>
-								  	<td><p>Autodesk Maya</p></td>
-								  </tr>
-								   <tr class="hide">
-								  	<td width="20%"><h4 id="progresstitle">Art Media</h4></td>
-								  	<td><p>Oil paint, acrylic, watercolour, poster colour, charcoal</p></td>
-								  </tr>
-								</table>		
-		        			</div>	        				
-		        		</div>
-		        		<hr>
-	        		</div>
-	        		
-	<!---------------Experience------------------>
-					<div class="profile-sections" id="experience">
-					<div class="row">
-		        		<div class="col-md-3">
-		        			<h3>Work Experience</h3>
-		        		</div>
-		        		<div class="col-md-9">
-		        			<table border="0" style="width:100%">
-								 <tr>
-								 	<td class="dates" width="20%"><h4>September - December 2015</h4></td>
-								 	<td>
-									   <ul class="work-experience">
-									   		<li><h4 class="position-title"><span class="position">Quality Assurance Engineer</span>, Zynga Toronto</h4></li>
-									   		<li><h4 class="location">Toronto, ON</h4></li>
-									   		<li><p>&bull; Performed front-end testing on Chess with Friends, Word Streak with Friends, and Hanging with Friends mobile games and reported issues on Pivotal</p></li>
-									   		<li><p>&bull; Drafted and revamped test plans for new features and updates for Chess with Friends</p></li>
-									   		<!--<li><p>&bull; Remodelled test plan structure to a more efficient modular system</p></li>-->
-									   		<li><p>&bull; Sorted data and compiled a report on OS and device distribution of users on Excel</p></li>
-									   		<li><p>&bull; Created final mockups for new features using Photoshop</p>
-									   		<li><p>&bull; Modified chess board style to a holiday theme for social media</p>
-									   		<li><p>&bull; Created pixel game sprites, backgrounds, and objects for a Zynga Hackathon project</p></li>
-									   </ul>
-								   	</td>
-								 </tr>
-								 
-								  <tr>
-								 	<td class="dates" width="20%"><h4>January - April 2015</h4></td>
-								  <td>
-									   <ul class="work-experience">
-									   		<li><h4 class="position-title"><span class="position">Junior QA Specialist</span>, Olson Canada</h4></li>
-									   		<li><h4 class="location">Toronto, ON</h4></li>
-									   		<li><p>&bull; Performed front-end testing of OLG websites on various mobile and tablet devices and internet browsers</p></li>
-									   		<li><p>&bull; Drafted website and application test plans from requirement documents for OLG, Nestl&eacute; , Olson Canada, and SCENE on Excel</p></li>
-									   		<li><p>&bull; Executed SMS shortcode testing with various carriers</p></li>
-									   		<li><p>&bull; Reported website and application issues on JIRA </p></li>
-									   		<li><p>&bull; Researched compatible CRM software for a client and Olson Canada</p></li>
-									   </ul>
-								   </td>
-								 </tr>
-								 
-								 <tr class="hide">
-								 	<td class="dates" width="20%"><h4>February 2013 - June 2014</h4></td>
-								  <td>
-									   <ul class="work-experience">
-									   		<li><h4 class="position-title"><span class="position">Waitress</span>, China King Restaurant</h4></li>
-									   		<li><h4 class="location">Surrey, BC</h4></li>
-									   		<li><p>&bull; Responsible for front of the house operations and services</p></li>
-									   		<li><p>&bull; Designed restaurant coupons and gift certificates using Microsoft Word and Publisher</p></li>
-									   </ul>
-								   </td>
-								 </tr>
-							</table>	
-		        		</div>	        				
-		        	</div>
-		        	<hr>	
-		        	<!-----------Volunteer-------->
-		        	<div class="hide">
-		        	<div class="row">
-		        		<div class="col-md-3">
-		        			<h3>Volunteer</h3>
-		        		</div>
-		        		<div class="col-md-9">
-		        			<table border="0" style="width:100%">
-								 <tr>
-								 	<td class="dates" width="20%"><h4>March 2012 - June 2014</h4></td>
-								 	<td>
-									   <ul class="work-experience">
-									   		<li><h4 class="position-title"><span class="position">Children's Day Camp Volunteer</span>, City of Surrey</h4></li>
-									   		<li><h4 class="location">Surrey, BC</h4></li>
-									   		<li><p>&bull; Provided camp participants with a safe environment and an engaging learning experience</p></li>
-									   		<li><p>&bull; Planned and organized camp activities with camp instructors</p></li>
-									   		<li><p>&bull; Communicated with parents in taking care of each participant's needs</p></li>
-									   	
-									   </ul>
-								   	</td>
-								 </tr>
-								 
-								  <tr>
-								 	<td class="dates" width="20%"><h4>April - May 2012</h4></td>
-								  <td>
-									   <ul class="work-experience">
-									   		<li><h4 class="position-title"><span class="position">Volunteer</span>, Jumpstart Academy</h4></li>
-									   		<li><h4 class="location">Surrey, BC</h4></li>
-									   		<li><p>&bull; Maintained a safe environment for program participants</p></li>
-									   		<li><p>&bull; Created a positive and encouraging atmosphere for participants</p></li>
-									   </ul>
-								   </td>
-								 </tr>							 
-							</table>		
-		        		</div>	        				
-		        	</div>
-		        	<hr>
-		        	</div>
-	        	</div>
-	        	
-	<!---------------Projects-------------------->
-				<div class="profile-sections" id="projects-profile">
-					<div class="row">
-		        		<div class="col-md-3">
-		        			<h3>Projects</h3>
-		        		</div>
-		        		<div class="col-md-9">
-		        			<table border="0" style="width:100%">
-								 <tr>
-								 	<td class="dates" width="20%"><h4>November 2015 - Present</h4></td>
-								 	<td>
-									   <ul class="work-experience">
-									   		<li><h4 class="position-title"><span class="position">Personal Website</span></h4></li>
-									   		<li><h4 class="location">celcha.github.io</h4></li>
-									   		<li><p>&bull; Fully designed and deployed a personal website with self-taught HTML/CSS and JavaScript/JQuery</p></li>
-									   		<li><p>&bull; Revamped old website into a one page website</p></li>								   	
-									   		<li><p>&bull; Transferred the website from a Dropbox app to GitHub webpages</p></li>
-									   </ul>
-								   	</td>
-								 </tr>
-								  <tr>
-								 	<td class="dates" width="20%"><h4>October 2015</h4></td>
-								 	<td>
-									   <ul class="work-experience">
-									   		<li><h4 class="position-title"><span class="position">Odin with Friends</span>, Zynga Hackathon</h4></li>
-									   		<li><h4 class="location">Zynga Toronto | Toronto, ON</h4></li>
-									   		<li><p>Participated in a 3-day hackathon at Zynga Toronto</p></li>	
-									   		<li><p>Collaborated with teammates in the planning of a multiplayer game version of Flappy Bird</p></li>
-									   		<li><p>Contributed ideas for new features in the game</p></li>		
-									   		<li><p>Performed front-end testing on the game and reported bugs</p></li>		
-									   		<li><p>Created sprites, game objects, background images, and an app icon for the project in Photoshop</p></li>								   		
-									   </ul>
-								   	</td>
-								 </tr>												
-								 
-							</table>		
-		        		</div>	        				
-		        	</div>
-		        	 <hr>
-		        </div>
-		       
-	<!---------------Education-------------------->
-	        		<div class="profile-sections" id="education">
-	        			<div class="row">
-			        		<div class="col-md-3">
-			        			<h3>Education</h3>
-			        		</div>
-			        		<div class="col-md-9">
-			        			<table border="0" style="width:100%">
-								 <tr>
-								 	<td class="dates" width="20%"><h4>September 2014 - Present</h4></td>
-								 	<td>
-									   <ul class="work-experience">
-									   		<li><h4 class="position-title"><span class="position">Candidate for Bachelor of Applied Science</span>, Computer Engineering</h4></li>
-									   		<li><h4 class="location">University of Waterloo | Waterloo, ON</h4></li>
-									   		<li><p>Relevant courses: Fundamentals of Programming (C#), Engineering Design with Embedded Systems (Java), Linear and Digital Circuits (VHDL), Data Structures and Algorithms (C++)</p></li>								   		
-									   </ul>
-								   	</td>
-								 </tr>
-								 
-								  <tr class="hide">
-								 	<td class="dates" width="20%"><h4>June 2014</h4></td>
-								  <td>
-									   <ul class="work-experience">
-									   		<li><h4 class="position-title"><span class="position">British Columbia High School Diploma</span></h4></li>
-									   		<li><h4 class="location">North Surrey Secondary | Surrey, BC</h4></li>
-									   		<li><p>Maintained a 4.0 GPA throughout high school career and nominated for Valedictorian</p></li>
-									   </ul>
-								   </td>
-								 </tr>
-								 
-								 <tr class="hide">
-								 	<td class="dates" width="20%"><h4>March 2012</h4></td>
-								  <td>
-									   <ul class="work-experience">
-									   		<li><h4 class="position-title"><span class="position">SWEAT Program</span>, Graphic Design</h4></li>
-									   		<li><h4 class="location">The Art Institute of Vancouver | Vancouver, BC</h4></li>
-									   		<li><p>Applied learning of Adobe Photoshop and Illustrator by designing logos, posters, and business cards</p></li>
-									   </ul>
-								   </td>
-								 </tr>							 
-							</table>		
-			        		</div>
-		        		</div>
-		        		<hr>
-	        		</div>
-	        		
-	<!--------------Languages-------------------------------->
-					<div class="profile-sections" id="languages">
-		        		<div class="row">
-		        			<div class="col-md-3">
-		        				<h3>Speaking and Listening</h3>
-		        			</div>
-		        			<div class="col-md-9">
-		        				<table border="0" style="width:100%">
-								  <tr>
-								    <td width="20%"><h4 id="progresstitle">Mandarin</h4></td>
-								    <td>
-								    	<div class="progress">
-											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-												Fluent
-											</div>
-										</div>
-									</td>		
-								  </tr>
-								  <tr>
-								    <td width="20%"><h4 id="progresstitle">French</h4><span id="delf">DELF LEvel B1</span></td>
-								    <td>
-										<div class="progress">
-											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-												Working Proficiency
-											</div>
-										</div>
-									</td>		
-								  </tr>
-								</table>			
-		        			</div>	        				
-		        		</div>
-		        		<div class="row">
-		        			<div class="col-md-3">
-		        				<h3>Reading and Writing</h3>
-		        			</div>
-		        			<div class="col-md-9">
-		        				<table border="0" style="width:100%">
-								  <tr>
-								    <td width="20%"><h4 id="progresstitle">Mandarin</h4></td>
-								    <td>
-								    	<div class="progress">
-											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-												Fluent
-											</div>
-										</div>
-									</td>		
-								  </tr>
-								  <tr>
-								    <td width="20%"><h4 id="progresstitle">French</h4><span id="delf">DELF Level B1</span></td>
-								    <td>
-										<div class="progress">
-											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
-												Working Proficiency
-											</div>
-										</div>
-									</td>		
-								  </tr>							
-								</table>			
-		        			</div>	        				
-		        		</div>
-		        		<hr>
-		        	</div>
-					
-	<!--------------Activities and Interests------------------>
-					<div class="profile-sections" id="activities">
-	        			<div class="row">
-			        		<div class="col-md-3">
-			        			<h3>Activities and Interests</h3>
-			        		</div>
-			        		<div class="col-md-9">
-			        			<table border="0" style="width:100%">
-								 <tr>
-								 	<td class="dates" width="20%"><h4>May 2015 - Present</h4></td>
-								 	<td>
-									   <ul class="work-experience">
-									   		<li><h4 class="position-title"><span class="position">Member</span>, UW Serve Volleyball Club</h4></li>
-									   		<li><h4 class="location">University of Waterloo | Waterloo, ON</h4></li>									   		
-									   </ul>
-								   	</td>
-								 </tr>
-								 
-								  <tr>
-								 	<td class="dates" width="20%"><h4>May 2015 - Present</h4></td>
-								  <td>
-									   <ul class="work-experience">
-									   		<li><h4 class="position-title"><span class="position">Participant</span>, Volleyball Intramurals</h4></li>
-									   		<li><h4 class="location">University of Waterloo | Waterloo, ON</h4></li>
-									   </ul>
-								   </td>
-								 </tr>
-								 
-								 <tr>
-								 	<td class="dates" width="20%"><h4>2009 - 2013</h4></td>
-								  <td>
-									   <ul class="work-experience">
-									   		<li><h4 class="position-title"><span class="position">Team Captain</span>, North Surrey Secondary Volleyball Team</h4></li>
-									   		<li><p>Received awards for "Athlete of the Month" and "Most Outstanding Senior Volleyball Player"</p></li>
-									   </ul>
-								   </td>
-								 </tr>
-								  <tr>
-								 	<td class="dates" width="20%"><h4>2013 - 2014</h4></td>
-								  <td>
-									   <ul class="work-experience">
-									   		<li><h4 class="position-title"><span class="position">Member</span>, Synergy Volleyball Club</h4></li>
-									   		<li><p>&bull; BC Volleyball Provincials</p></li>
-									   		<li><p>&bull; Willamette Championships | Oregon, US</p></li>
-									   </ul>
-								   </td>
-								 </tr>
-								  </tr>
-								  <tr>
-								 	<td class="dates" width="20%"><h4>2013 - 2014</h4></td>
-								  <td>
-									   <ul class="work-experience">
-									   		<li><h4 class="position-title"><span class="position">Student</span>, Kosheng Art Studio</h4></li>
-									   </ul>
-								   </td>
-								 </tr>	
-								  </tr>
-								  <tr>
-								  	<td><h4 class="position-title"><span class="position">Interests</span></h4></td>
-								  <td>
-									   <ul class="work-experience">
-									   		<li><p>3D/2D animation, tradition and digital painting, PC and console gaming, graphic design, volleyball, and skiing</p></li>
-									   </ul>
-								   </td>
-								 </tr>													 
-							</table>		
-			        		</div>
-		        		</div>
-	        		<hr>	
-	        		</div>
-	        	</div>
-	        	</div>
 			</div>
 		</div>
-	<!----------------Projects-------------------->        
-	        <div class="projects">
-	        	<div class="container">
-	        		<h1>Projects</h1>
-	        		<div class="project-gallery">
-	     					<div class="row">
-													
-							<div class="col-md-6">
-								<div align="center">
-								<div class="pic" id="project2">
-									<img src="images/husky-icon2.png"/>
-									<div class="title-overlay"><p>Odin with Friends | Pixel Art</p></div>
-								</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div align="center">
-								<div class="pic" id="project3">
-									<img src="images/SSCover.png"/>
-									<div class="title-overlay"><p>Spartans Speak | Design</p></div>
-								</div>
-							</div>
-							</div>
-						</div>
-						<div class="row" id="project-description">
-							<div class="container">
-								<div class="description" id="proj2">
-									<h2>Odin with Friends</h2>
-									<h4>Pixel Art | Zynga Hackathon | October 2015</h4>
-									<p>Odin with Friends is a modified Flappy Bird game with Odin the dog as the theme. 
-										The mobile game is a multiplayer game with additional horizontal controls. Players can propel
-										themselves forward or backgrounds in addition to jumping over obstacles.</p>
-									<p>The game has a pixel art style with art assets created in Photoshop. </p>
-									<div class="project2-images">
-			        					<div class="row">
-			        						<div class="col-md-3" id="image-cell">
-			        							<a href="images/shibainu.png" class="thumbnail" data-lightbox="pixels">
-			        								<img src="images/shibainu.png">
-			        							</a>
-			        						</div>
-			        						<div class="col-md-3" id="image-cell">
-			        							<a href="images/odin.png" class="thumbnail" data-lightbox="pixels">
-			        								<img src="images/odin.png">
-			        							</a>
-			        						</div>
-			        						<div class="col-md-3" id="image-cell">
-			        							<a href="images/background5.png" class="thumbnail" data-lightbox="pixels">
-			        								<img src="images/background5.png">
-			        							</a>
-			        						</div>
-			        						<div class="col-md-3" id="image-cell">
-			        							<a href="images/startscreen2.png" class="thumbnail" data-lightbox="pixels">
-			        								<img src="images/startscreen2.png">
-			        							</a>
-			        						</div>
-										</div>
-									</div>
-								</div>
-								<div class="description" id="proj3">
-									<h2>Spartans Speak</h2>
-									<h4>Head Designer | North Surrey Secondary Magazine | 2011-2014</h4>
-									<p id="article-link">View the November 2013 edition <a href="http://issuu.com/celinachang64/docs/spartansspeaknovember2013edit">here</a>.</p>
-									<p> Spartans Speak is a school magazine club that produces issues completely produced by students. As the head designer, I was responsible for ensuring that articles were completed and edited before the deadline and I planned and designed the complete layout of North Secondary Secondary school magazines.</p>
-								</div>
-							</div>
-						</div>
+
+<!-- Main Navbar -->
+
+		<div class="mainnav">
+			<div class="container">
+				<center>
+					<div class="nav nav-tabs" >
+		    			<ul class="menu">		    				
+							<li role="presentation" class="button" id="portfolio"><a class="button-link" href="#portfolio">Portfolio</a></li>
+							<li role="presentation" class="button" id="gallery"><a class="button-link" href="#gallery">Gallery</a></li>
+							<li role="presentation" class="button" id="profile"><a class="button-link" href="#profile">Resume</a></li>
+		    			</ul>
+		    		</div>
+	    		</center>
+	    	</div>
+		</div>
+
+<!-- Portfolio -->
+		<div class="portfolio">
+			<div class="container">
+				<h2>Logo Design</h2>
+				<div class="row">
+					<div class="col-xs-6 col-md-3">
+						<a href="img/gallery/portfolio/fittrack.png" class="thumbnail" data-lightbox="logo"><img src="img/gallery/portfolio/fittrack.png"/></a>
 					</div>
-	        	</div>
-	        </div>
-	<!----Art Portfolio------------>
-	
-	        <div class="gallery">
-	        	<div class="container">
-	        		<hr>
-	        		<div align="center">
-	        		<h1>Art Portfolio</h1>
-	        		<div align="center">
-						<ul class="nav nav-tabs" id="gallery-tabs">
-							<li id="art-gallery" role="presentation">
-		   						<a class="dropdown-toggle">Main</a>
-							</li>
-		 					<li id="digital" role="presentation">
-		   						<a class="dropdown-toggle">Digital</a>
-							</li>
-							<li id="traditional" role="presentation">
-		   						<a class="dropdown-toggle">Traditional</a>
-							</li>
-							<li id="motion" role="presentation">
-		   						<a class="dropdown-toggle">Motion</a>
-							</li>
-						</ul>
-					</div>        		
-	        		</div>
-	        		<div class="art-gallery">
-	     					<div class="row">
+					<div class="col-xs-6 col-md-3">
+						<a href="img/gallery/portfolio/toptech1.png" class="thumbnail" data-lightbox="logo"><img src="img/gallery/portfolio/toptech1.png"/></a>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<a href="img/gallery/portfolio/toptech2.png" class="thumbnail" data-lightbox="logo"><img src="img/gallery/portfolio/toptech2.png"/></a>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<a href="img/gallery/portfolio/toptech3.png" class="thumbnail" data-lightbox="logo"><img src="img/gallery/portfolio/toptech3.png"/></a>
+					</div>
+					
+				</div>
+				<hr>
+				<div class="works">
+					<h2>Works</h2>
+					<div class="row">
+
+						<div class="col-xs-6 col-md-4">
+							<a href="#wemesh" class="thumbnail work-item" id="wemesh"><img src="img/gallery/portfolio/press.png"/></a>
+						</div>
+						<div class="col-xs-6 col-md-4">
+							<a href="#odin" class="thumbnail work-item" id="odin"><img src="img/gallery/portfolio/startscreen2.png"/></a>
+						</div>
+						<div class="col-xs-6 col-md-4">
+							<a href="#spartans" class="thumbnail work-item portrait" id="spartans"><img src="img/gallery/portfolio/cover1.jpg"/></a>
+						</div>
+
 						
-							<div class="col-md-4">
-								<div class="image" id="pic1">
-									<a href="images/myCity.jpg" data-lightbox="imgs">
-									<img src="images/myCity.jpg"/>
-									</a>
-								</div>
-								<div class="image">
-									<a href="images/rocks.jpg" data-lightbox="imgs">
-									<img src="images/rocks.jpg"/>
-									</a>
-								</div>
+					</div>
+					<hr>
+					<div class="wemesh">
+						<h1>WeMesh Press Kit</h1>
+						<h3>UI/UX Designer | WeMesh | 2016</h3>
+						<p>As a UI/UX Designer at WeMesh, I designed the press kit and implemented my design with HTML, CSS, JavaScript, and BootStrap. Lightbox, a JavaScript library, was used for image display.<br>View the press kit <a href="http://weme.sh/press.html" class="portfolio-link">here</a>.</p>
+						<div class="row">
+							<div class="col-xs-6 col-md-3">
+								<a href="img/gallery/portfolio/press1.png" class="thumbnail" data-lightbox="wemesh"><img src="img/gallery/portfolio/press1.png"/></a>
 							</div>
-							
-							<div class="col-md-4">
-								<div class="image" id="pic3">
-									<a href="images/redDress.png" data-lightbox="imgs">
-									<img src="images/redDress.png"/>
-									</a>
-								</div>
-								<div class="image" id="pic4">
-									<a href="images/SSCover.png" data-lightbox="imgs">
-									<img src="images/SSCover.png"/>
-									</a>
-								</div>
+							<div class="col-xs-6 col-md-3">
+								<a href="img/gallery/portfolio/press1-1.png" class="thumbnail" data-lightbox="wemesh"><img src="img/gallery/portfolio/press1-1.png"/></a>
 							</div>
-							
-							<div class="col-md-4">
-								<div class="image" id="pic5">
-									<a href="images/Blue.jpg" data-lightbox="imgs">
-									<img src="images/Blue.jpg"/>
-									</a>
-								</div>
-								<div class="image" id="pic6">
-									<a href="images/bird.jpg" data-lightbox="imgs">
-									<img src="images/bird.jpg"/>
-									</a>
-								</div>
+
+							<div class="col-xs-6 col-md-3">
+								<a href="img/gallery/portfolio/press2.png" class="thumbnail" data-lightbox="wemesh"><img src="img/gallery/portfolio/press2.png"/></a>
+							</div>
+							<div class="col-xs-6 col-md-3">
+								<a href="img/gallery/portfolio/press3.png" class="thumbnail" data-lightbox="wemesh"><img src="img/gallery/portfolio/press3.png"/></a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 col-md-4">
+								<a href="img/gallery/portfolio/press3-1.png" class="thumbnail" data-lightbox="wemesh"><img src="img/gallery/portfolio/press3-1.png"/></a>
+							</div>
+							<div class="col-xs-6 col-md-4">
+								<a href="img/gallery/portfolio/press4.png" class="thumbnail" data-lightbox="wemesh"><img src="img/gallery/portfolio/press4.png"/></a>
+							</div>
+
+							<div class="col-xs-6 col-md-4">
+								<a href="img/gallery/portfolio/press5.png" class="thumbnail" data-lightbox="wemesh"><img src="img/gallery/portfolio/press5.png"/></a>
 							</div>
 						</div>
 					</div>
-	        		<div class="digital">
-	        			<div class="container">
-	        				<h2>Digital</h2>
-	        				<p><span id="tool">Tools</span> Photoshop, Illustrator, InDesign, PaintTool SAI</p>
-	        				<div class="images">
-	        					<div class="row">
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/cover1.jpg" class="thumbnail" data-lightbox="digital1">
-	        								<img src="images/cover1.jpg">
-	        							</a>
-	        						</div>
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/backcover1.png" class="thumbnail" data-lightbox="digital1">
-	        								<img src="images/backcover1.png">
-	        							</a>
-	        						</div>
-	
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/SSCover.png" class="thumbnail" data-lightbox="digital1">
-	        								<img src="images/SSCover.png">
-	        							</a>
-	        						</div>
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/backcover2.png" class="thumbnail" data-lightbox="digital1">
-	        								<img src="images/backcover2.png">
-	        							</a>
-	        						</div>
-	        					</div>
-	        					<div class="row">
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/chinakingcoupon.png" class="thumbnail" data-lightbox="digital1">
-	        								<img src="images/chinakingcoupon.png">
-	        							</a>
-	        						</div>
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/toptech1.png" class="thumbnail" data-lightbox="digital1">
-	        								<img src="images/toptech1.png">
-	        							</a>
-	        						</div>
-	
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/toptech2.png" class="thumbnail" data-lightbox="digital1">
-	        								<img src="images/toptech2.png">
-	        							</a>
-	        						</div>
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/toptech3.png" class="thumbnail" data-lightbox="digital1">
-	        								<img src="images/toptech3.png">
-	        							</a>
-	        						</div>
-	        					</div>
-	        					<div class="row">
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<div class="row">
-	        							<a href="images/toptech4.png" class="thumbnail" data-lightbox="digital1">
-	        								<img src="images/toptech4.png">
-	        							</a>
-	        							</div>
-	        							<div class="row">
-	        							<a href="images/redDress.png" class="thumbnail" data-lightbox="digital1">
-	        								<img src="images/redDress.png">
-	        							</a>
-	        							</div>
-	        						</div>
-	        						
-	
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/Blue.jpg" class="thumbnail" data-lightbox="digital1">
-	        								<img src="images/Blue.jpg">
-	        							</a>
-	        						</div>
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/shower.png" class="thumbnail" data-lightbox="digital1">
-	        								<img src="images/shower.png">
-	        							</a>
-	        						</div>
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<div class="row">
-	        								<a href="images/lost.jpg" class="thumbnail" data-lightbox="digital1">
-	        								<img src="images/lost.jpg">
-	        							</a>
-	        							</div>
-	        							<div class="row">
-	        								<a href="images/figure1.jpg" class="thumbnail" data-lightbox="digital1">
-	        								<img src="images/figure1.jpg">
-	        							</a>
-	        							</div>        							
-	        						</div>
-	        					</div>
-	        				</div>
-	        			</div>
-	        		</div>
-	        		<div class="traditional">
-	        			<div class="container">
-	        				<h2>Traditional</h2>
-	        				<p><span id="tool">Tools</span> Acrylic, oil paint, poster colours, watercolour, ink, charcoal, markers, pencil</p>
-	        	
-	        					<div class="images">
-	        					<div class="row">
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/bird.jpg" class="thumbnail" data-lightbox="traditional1">
-	        								<img src="images/bird.jpg">
-	        							</a>
-	        						</div>
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/myCity.jpg" class="thumbnail" data-lightbox="traditional1">
-	        								<img src="images/myCity.jpg">
-	        							</a>
-	        						</div>
-	
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/rocks.jpg" class="thumbnail" data-lightbox="traditional1">
-	        								<img src="images/rocks.jpg">
-	        							</a>
-	        						</div>
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/oilpainting.jpg" class="thumbnail" data-lightbox="traditional1">
-	        								<img src="images/oilpainting.jpg">
-	        							</a>
-	        						</div>
-	        					</div>
-	        					<div class="row">
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/staird.png" class="thumbnail" data-lightbox="traditional1">
-	        								<img src="images/stairs.png">
-	        							</a>
-	        						</div>
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/theoldworld.jpg" class="thumbnail" data-lightbox="traditional1">
-	        								<img src="images/theoldworld.jpg">
-	        							</a>
-	        						</div>
-	
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/mother-child.jpg" class="thumbnail" data-lightbox="traditional1">
-	        								<img src="images/mother-child.jpg">
-	        							</a>
-	        						</div>
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/city.png" class="thumbnail" data-lightbox="traditional1">
-	        								<img src="images/city.png">
-	        							</a>
-	        						</div>
-	        					</div>
-	        					<div class="row">
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<div class="row">
-	        							<a href="images/french-pictures.png" class="thumbnail" data-lightbox="traditional1">
-	        								<img src="images/french-pictures.png">
-	        							</a>
-	        							</div>
-	        							<div class="row">
-	        							<a href="images/house.png" class="thumbnail" data-lightbox="traditional1">
-	        								<img src="images/house.png">
-	        							</a>
-	        							</div>
-	        						</div>
-	        						
-	
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/coffeeboy.png" class="thumbnail" data-lightbox="traditional1">
-	        								<img src="images/coffeeboy.png">
-	        							</a>
-	        						</div>
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/character2.png" class="thumbnail" data-lightbox="traditional1">
-	        								<img src="images/character2.png">
-	        							</a>
-	        						</div>
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<div class="row">
-	        								<a href="images/character3.png" class="thumbnail" data-lightbox="traditional1">
-	        								<img src="images/character3.png">
-	        							</a>
-	        							</div>
-	        							<div class="row">
-	        								<a href="images/characterdesign.png" class="thumbnail" data-lightbox="traditional1">
-	        								<img src="images/characterdesign.png">
-	        							</a>
-	        							</div>        							
-	        						</div>
-	        					</div>
-	        					<div class="row">
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<div class="row">
-	        							<a href="images/apartment.png" class="thumbnail" data-lightbox="traditional1">
-	        								<img src="images/apartment.png">
-	        							</a>
-	        							</div>
-	        							<div class="row">
-	        							<a href="images/bow.png" class="thumbnail" data-lightbox="traditional1">
-	        								<img src="images/bow.png">
-	        							</a>
-	        							</div>
-	        						</div>
-	        						
-	
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/figure1.png" class="thumbnail" data-lightbox="traditional1">
-	        								<img src="images/figure1.png">
-	        							</a>
-	        						</div>
-	        						<div class="col-xs-6 col-md-3" id="image-cell">
-	        							<a href="images/figure2.png" class="thumbnail" data-lightbox="traditional1">
-	        								<img src="images/figure2.png">
-	        							</a>
-	        						</div>
-	        					</div>
-	        				</div>
-	        			</div>
-	        		</div>
-	        		<div class="motion">
-	        			<div class="container">
-	        				<h2>Motion</h2>
-	        				<p><span id="tool">Tool</span> Autodesk Maya</p>
-	        				<ul id="motion-vids">
-								<li><iframe width="420" height="315" src="https://www.youtube.com/embed/DrMAklyn0W8" frameborder="0" allowfullscreen></iframe>
+					<hr>
+					<div class="odin">
+						<h1>Odin with Friends</h1>
+						<h3>Pixel Artist| Zynga Hackathon | October 2015</h3>
+						<p>Odin with Friends is a modified Flappy Bird game with Odin the dog as the theme. The mobile game is a multiplayer game with additional horizontal controls. Players can propel themselves forward or backgrounds in addition to jumping over obstacles. The game has a pixel art style with art assets created in Photoshop.</p>
+						<div class="row">
+							<div class="col-xs-6 col-md-3">
+								<a href="img/gallery/portfolio/odin.gif" class="thumbnail" data-lightbox="odin"><img src="img/gallery/portfolio/odin.gif"/></a>
+							</div>
+							<div class="col-xs-6 col-md-3">
+								<a href="img/gallery/portfolio/shiba.gif" class="thumbnail" data-lightbox="odin"><img src="img/gallery/portfolio/shiba.gif"/></a>
+							</div>
+
+							<div class="col-xs-6 col-md-3">
+								<a href="img/gallery/portfolio/startscreen2.png" class="thumbnail" data-lightbox="odin"><img src="img/gallery/portfolio/startscreen2.png"/></a>
+							</div>
+							<div class="col-xs-6 col-md-3">
+								<a href="img/gallery/portfolio/background5.png" class="thumbnail" data-lightbox="odin"><img src="img/gallery/portfolio/background5.png"/></a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 col-md-4">
+								<a href="img/gallery/portfolio/Mockup.png" class="thumbnail" data-lightbox="odin"><img src="img/gallery/portfolio/Mockup.png"/></a>
+							</div>
+							<div class="col-xs-6 col-md-4">
+								<a href="img/gallery/portfolio/husky.png" class="thumbnail" data-lightbox="odin"><img src="img/gallery/portfolio/husky.png"/></a>
+							</div>
+							<div class="col-xs-6 col-md-4">
+								<a href="img/gallery/portfolio/light.png" class="thumbnail" data-lightbox="odin"><img src="img/gallery/portfolio/light.png"/></a>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="spartans">
+						<h1>Spartans Speak Magazine</h1>
+						<h3>Head Designer | North Surrey Secondary Magazine | 2011-2014</h3>
+						<p>Spartans Speak is a student-run magazine at North Surrey Secondary. As a Head Designer, I was responsible for the complete layout of each issue. The magazine was designed using Photoshop and InDesign.<br>View the November 2013 issue <a href="https://issuu.com/celinachang64/docs/spartansspeaknovember2013edit" class="portfolio-link">here</a>.</p>
+						<div class="row">
+							<div class="col-xs-6 col-md-3">
+								<a href="img/gallery/portfolio/cover1.jpg" class="thumbnail" data-lightbox="spartans"><img src="img/gallery/portfolio/cover1.jpg"/></a>
+							</div>
+							<div class="col-xs-6 col-md-3">
+								<a href="img/gallery/portfolio/backcover1.png" class="thumbnail" data-lightbox="spartans"><img src="img/gallery/portfolio/backcover1.png"/></a>
+							</div>
+
+							<div class="col-xs-6 col-md-3">
+								<a href="img/gallery/portfolio/SSCover.png" class="thumbnail" data-lightbox="spartans"><img src="img/gallery/portfolio/SSCover.png"/></a>
+							</div>
+							<div class="col-xs-6 col-md-3">
+								<a href="img/gallery/portfolio/backcover2.png" class="thumbnail" data-lightbox="spartans"><img src="img/gallery/portfolio/backcover2.png"/></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- Gallery -->
+		<div class="gallery">
+
+			<div class="subnav">
+				<div class="container">
+					<center>
+						<div class="nav nav-tabs" >
+			    			<ul class="menu">
+			    				<li role="presentation" class="button" id="digital"><a class="button-link">Digital</a></li>
+								<li role="presentation" class="button" id="traditional"><a class="button-link">Traditional</a></li>
+								<li role="presentation" class="button" id="motion"><a class="button-link">Motion</a></li>
+			    			</ul>
+			    		</div>
+		    		</center>
+		    	</div>
+			</div>
+
+			<!-- Digital Illustrations -->
+
+			<div class="subgallery digital">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6 col-md-4">
+							<a href="img/gallery/digital/liu.png" class="thumbnail" data-lightbox="digital"><img src="img/gallery/digital/liu.png"/></a>
+						</div>
+						<div class="col-xs-6 col-md-4">
+							<a href="img/gallery/digital/Blue.jpg" class="thumbnail" data-lightbox="digital"><img src="img/gallery/digital/Blue.jpg"/></a>
+						</div>
+
+						<div class="col-xs-6 col-md-4">
+							<a href="img/gallery/digital/shower.png" class="thumbnail" data-lightbox="digital"><img src="img/gallery/digital/shower.png"/></a>
+						</div>
+						
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-md-4">
+							<a href="img/gallery/digital/husky-icon2.png" class="thumbnail" data-lightbox="digital"><img src="img/gallery/digital/husky-icon2.png"/></a>
+						</div>
+						<div class="col-xs-6 col-md-4">
+							<a href="img/gallery/digital/lost.jpg" class="thumbnail" data-lightbox="digital"><img src="img/gallery/digital/lost.jpg"/></a>
+						</div>
+						<div class="col-xs-6 col-md-4">
+							<a href="img/gallery/digital/redDress.png" class="thumbnail" data-lightbox="digital"><img src="img/gallery/digital/redDress.png"/></a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-md-4">
+							<a href="img/gallery/digital/figure1.jpg" class="thumbnail" data-lightbox="digital"><img src="img/gallery/digital/figure1.jpg"/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Traditional Illustrations -->
+
+			<div class="subgallery traditional">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/mother-child.jpg" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/mother-child.jpg"/></a>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/Landscape.jpg" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/Landscape.jpg"/></a>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/polarbears.jpg" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/polarbears.jpg"/></a>
+						</div>
+
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/theoldworld.jpg" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/theoldworld.jpg"/></a>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/myCity.jpg" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/myCity.jpg"/></a>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/oilpainting.jpg" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/oilpainting.jpg"/></a>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/rocks.jpg" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/rocks.jpg"/></a>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/oilpastel.png" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/oilpastel.png"/></a>
+						</div>
+					</div>
+					<div class="row">
+						
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/stairs.png" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/stairs.png"/></a>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/bird.jpg" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/bird.jpg"/></a>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/apartment.png" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/apartment.png"/></a>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/bow.png" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/bow.png"/></a>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/figure1.png" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/figure1.png"/></a>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/figure2.png" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/figure2.png"/></a>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/house.png" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/house.png"/></a>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/coffeeboy.png" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/coffeeboy.png"/></a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/characterdesign.png" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/characterdesign.png"/></a>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/character2.png" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/character2.png"/></a>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/character3.png" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/character3.png"/></a>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="img/gallery/traditional/french-pictures.png" class="thumbnail" data-lightbox="traditional"><img src="img/gallery/traditional/french-pictures.png"/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Motion -->
+
+			<div class="subgallery motion">
+				<center>
+					<h2>2D Animation</h2>
+				</center>
+				<div class="container">
+					<a href="img/gallery/motion/blink.gif" class="thumbnail" data-lightbox="motion"><img src="img/gallery/motion/blink.gif"/></a>
+				</div>
+				<center>
+					<h2>3D Animation and Modelling</h2>
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-6 col-md-6">
+								<iframe width="420" height="315" src="https://www.youtube.com/embed/DrMAklyn0W8" frameborder="0" allowfullscreen></iframe>
 								<div class="description-motion">
 									<p>Paper Plane Animation | Maya | 2014<br>Environment modelling practice</p>
 								</div>
-								</li>
-								
-								<li><iframe width="420" height="315" src="https://www.youtube.com/embed/gZeSeesra30" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="col-xs-6 col-md-6">
+								<iframe width="420" height="315" src="https://www.youtube.com/embed/gZeSeesra30" frameborder="0" allowfullscreen></iframe>
 								<div class="description-motion">
 									<p>Snow Globe Animation | Maya | 2014</p>
 								</div>
-								</li>
-								
-								<li><iframe width="420" height="315" src="https://www.youtube.com/embed/ifppON6KRpA" frameborder="0" allowfullscreen></iframe></li>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 col-md-6">
+								<iframe width="420" height="315" src="https://www.youtube.com/embed/ifppON6KRpA" frameborder="0" allowfullscreen></iframe>
 								<div class="description-motion">
 									<p>Halloween environment | Maya | 2014</p>
 								</div>
-								</li>
-								
-								<li><iframe width="420" height="315" src="https://www.youtube.com/embed/vFBHahPNJAc" frameborder="0" allowfullscreen></iframe></li>
+							</div>
+							<div class="col-xs-6 col-md-6">
+								<iframe width="420" height="315" src="https://www.youtube.com/embed/vFBHahPNJAc" frameborder="0" allowfullscreen></iframe></li>
 								<div class="description-motion">
 									<p> Building Model | Maya | 2014<br> Modelling and texturing practice</p>
 								</div>
-								</li>
-							</ul>
-	        			</div>
-	        		</div>
-	        	</div>
-	        </div>
-	        
-	
-	<!------------------Footer---------------------------------->		
-			<div class="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12" id="linkbox">
-							<h2>CONTACT</h2>
-							<h4>c57chang@uwaterloo.ca</h4>
-							<ul>
-								<li><a href="http://ca.linkedin.com/in/celinachang"><img src="images/linked-in@2x-gray.png"></a></li>
-								<li><a href="https://github.com/CelCha"><img src="images/github-gray.png"></a></li>
-							</ul>
+							</div>
 						</div>
-					
 					</div>
-					<!---
-					<div class="row" id="bottom-links">
-						<div class="col-md-12">
-							<ul>
-								<li><a href="http://celinachang.studentartfolio.com/">ART PORTFOLIO</a> |</li>
-								<li><a href="https://github.com/CelSeven">GITHUB</a> |</li>
-								<li><a href="http://ca.linkedin.com/in/celinachang">LINKEDIN</a> |</li>
-							</ul>
-						</div>
-					</div> -->
-					<div class="row">
-						<p id="attribution"> Social media icons belong to Robby Designs. Link to the Deviantart page can be found <a href="http://robby-designs.deviantart.com/art/Socialcircles-Free-social-icons-circular-347921678">here</a></p>
-					</div>
-				</div>
+				</center>
 			</div>
 		</div>
-        <script src="js/lightbox.js"></script>
-    </body>
+
+		<!-- Profile -->
+		<div class="profile">
+			<div class="container">
+				<div class="main-heading">
+					<center><h2 class="heading">Celina Chang</h2><center>
+					<p>2B Computer Engineering | c57chang@uwaterloo.ca | github.com/CelCha</p>
+				</div>
+				<hr>
+
+				<div class="row">
+					<div class="col-md-4">
+						<h2>Summary of Qualifications</h2>
+					</div>
+					<div class="col-md-8">
+						<ul class="list">
+							<li>8 months of QA experience with iOS, Android, and BlackBerry platforms</li>
+							<li>Experienced with JIRA and Pivotal's bug-tracking system and drafting test plans</li>
+							<li>Skilled in Word, Excel, PowerPoint, Photoshop, Illustrator, and InDesign</li>
+							<li>Proficient with C#, HTML, CSS languages</li>
+							<li>Basic knowledge of JavaScript and JQuery, Java, C++, and VHDL</li>
+							<li>Trilingual - Fluent in English and Mandarin, basic working proficiency in French</li>
+						</ul>
+					</div>
+				</div>
+				<hr>
+
+				<div class="row">
+					<div class="col-md-4">
+						<h2>Work Experience</h2>
+					</div>
+					<div class="col-md-8">
+						<h3 class="title">Quality Assurance Engineer | Sep 2015 - Dec 2015</h3>
+						<h3 class="sub-title">Zynga | Toronto, ON</h3>
+						<ul class="list">
+							<li>Performed front-end testing on mobile games and reported issues on Pivotal</li>
+							<li>Drafted and revamped test plans for new features and updates for Chess with Friends</li>
+							<li>Sorted data and compiled a report on OS and device distribution of users on Excel</li>
+							<li>Created final mockups for new game features using Photoshop</li>
+							<li>Created pixel game sprites, backgrounds, and objects for a Zynga hackathon project</li>
+						</ul>
+
+						<h3 class="title">Junior QA Specialist | Jan 2015 - Apr 2015</h3>
+						<h3 class="sub-title">Olson Canada | Toronto, ON</h3>
+						<ul class="list">
+							<li>Performed front-end browser testing for OLG and Olson Canada using JIRA for bug-tracking</li>
+							<li>Drafted test plans from requirement documents for OLG, Nestle, Olson Canada, and SCENE</li>
+							<li>Executed SMS shortcode testing with various carriers</li>
+							<li>Researched compatible CRM software for a client and Olson Canada</li>
+						</ul>
+					</div>
+				</div>
+				<hr>
+
+				<div class="row">
+					<div class="col-md-4">
+						<h2>Education</h2>
+					</div>
+					<div class="col-md-8">
+						<h3 class="title">Candidate for Bachelor of Applied Science | Computer Engineering | 2014 - Present</h3>
+						<h3 class="sub-title">University of Waterloo | Waterloo, ON</h3>
+						<ul class="list">
+							<li>Relevant Courses: Fundamentals of Programming (C#), Engineering Design with Embedded Systems (Java), Algorithms and Data Structures (C++)</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<h2>Interests & Activities</h2>
+					</div>
+					<div class="col-md-8">
+						<ul class="list">
+							<li><span class="btitle">Member of UW Serve Volleyball Club</span> 2015 - Present</li>
+							<li><span class="btitle">Head Designer of School Magazine</span> 2011 - 2014</li>
+							<li><span class="btitle">Enjoys</span> PC/mobile/console gaming, game development, 3D/2D animation, drawing, painting, web/graphic design, volleyball, and skiing</li>
+						</ul>
+					</div>
+				</div>
+				<hr>
+			</div>
+		</div>
+
+
+
+
+			
+		<script src="js/lightbox.js"></script>
+	</body>
 </html>

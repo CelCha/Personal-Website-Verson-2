@@ -169,7 +169,7 @@
       for (var i = 0; i < $links.length; i = ++i) {
         addToAlbum($($links[i]));
         if ($links[i] === $link[0]) {
-          imageNumber = i;
+          imageNumber = i;         
         }
       }
     } else {

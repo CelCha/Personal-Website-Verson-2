@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	//Portfolio Navigation
+	//Works Navigation
 	$("#wemesh").click(function(){
 		$('html, body').animate({
 			scrollTop: $(".wemesh").offset().top

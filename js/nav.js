@@ -1,7 +1,9 @@
 $(document).ready(function(){
 	//gallery
-	$(".gallery, .profile, .contact").hide();
-	$(".portfolio").show();
+	$(".gallery, .profile, .contact, .plogos").hide();
+	$(".portfolio, .works").show();
+
+		
 
 		$(".digital").show();
 		$(".traditional, .motion").hide();
@@ -10,6 +12,19 @@ $(document).ready(function(){
 		$( "#portfolio a" ).removeClass( "button-link" ).addClass( "button-hover-link" );
 		$( "#gallery, #profile, #contact" ).removeClass( "button-hover" ).addClass( "button" );
 		$( "#gallery a, #profile a, #contact a" ).removeClass( "button-hover-link" ).addClass( "button-link" );
+
+		$( "#works" ).removeClass( "button" ).addClass( "button-hover" );
+		$( "#works a" ).removeClass( "button-link" ).addClass( "button-hover-link" );
+		$( "#plogos" ).removeClass( "button-hover" ).addClass( "button" );
+		$( "#plogos" ).removeClass( "button-hover-link" ).addClass( "button-link" );
+
+		$( "#digital" ).removeClass( "button" ).addClass( "button-hover" );
+		$( "#digital a" ).removeClass( "button-link" ).addClass( "button-hover-link" );
+		$( "#traditional, #motion" ).removeClass( "button-hover" ).addClass( "button" );
+		$( "#traditional a, #motion a" ).removeClass( "button-hover-link" ).addClass( "button-link" );
+
+
+
 	
 	$("#gallery").click(function(){
 		$(".gallery").fadeIn();
@@ -60,6 +75,25 @@ $(document).ready(function(){
 		$( "#gallery a, #profile a" ).removeClass( "button-hover-link" ).addClass( "button-link" );
 
 	});
+
+		$("#works").click(function(){
+			$(".works").fadeIn();
+			$(".plogos").hide();
+
+			$( "#works" ).removeClass( "button" ).addClass( "button-hover" );
+			$( "#works a" ).removeClass( "button-link" ).addClass( "button-hover-link" );
+			$( "#plogos" ).removeClass( "button-hover" ).addClass( "button" );
+			$( "#plogos a" ).removeClass( "button-hover-link" ).addClass( "button-link" );
+		});
+		$("#plogos").click(function(){
+			$(".plogos").fadeIn();
+			$(".works").hide();
+
+			$( "#plogos" ).removeClass( "button" ).addClass( "button-hover" );
+			$( "#plogos a" ).removeClass( "button-link" ).addClass( "button-hover-link" );
+			$( "#works" ).removeClass( "button-hover" ).addClass( "button" );
+			$( "#works a" ).removeClass( "button-hover-link" ).addClass( "button-link" );
+		});
 	
 	$("#profile").click(function(){
 		$(".profile").fadeIn();
